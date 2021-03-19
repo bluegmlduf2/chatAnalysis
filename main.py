@@ -26,7 +26,7 @@ def readCsv():
 
         result = {}
         for key, group_data in groupby(csvArr):
-            #딕셔너리에 해당하는 키가 존재하면 in 참
+            # 딕셔너리에 해당하는 키가 존재하면 in 참
             if key[1] in result:
                 result[key[1]].append(list(group_data))#list()형변환 append는 list,dict동일
                 #result[key[1]].append(okt.nouns(key[2]))
