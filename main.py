@@ -22,7 +22,7 @@ def readCsv():
                 continue
             csvArr.append(row)
 
-        csvArr.sort(key=lambda x : x[1])#sorted:새롭게배열을만듬 sort:기존 배열에 저장함 lambda 원소변수명지정:해당원소사용
+        csvArr.sort(key=lambda x : x[1])#sorted:새롭게배열을만듬 / sort:기존 배열에 저장함 lambda 원소변수명지정:해당원소사용
 
         result = {}
         for key, group_data in groupby(csvArr):
